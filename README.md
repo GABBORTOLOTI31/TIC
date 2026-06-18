@@ -1,79 +1,107 @@
-# Sistema de Ordem de Serviço — Climatizar AC
+# ❄️ TIC - Sistema de Gestão de Serviços de Ar-Condicionado
 
-## Descrição
+## 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido como trabalho acadêmico da disciplina de Programação Orientada a Objetos, com o objetivo de aplicar na prática os conceitos fundamentais da linguagem Java em um cenário real de micro-empresa.
+O sistema foi desenvolvido em Java com o objetivo de auxiliar empresas de manutenção e instalação de ar-condicionado no gerenciamento de clientes, técnicos, equipamentos, materiais e ordens de serviço.
 
-O sistema simula o gerenciamento de ordens de serviço de uma empresa especializada em **instalação, manutenção e limpeza de ar-condicionado**, permitindo registrar clientes, técnicos, equipamentos e materiais utilizados em cada atendimento, além de calcular o valor total do serviço prestado.
-
----
-
-## Funcionalidades
-
-- Cadastro de **clientes** com dados pessoais e endereço
-- Cadastro de **técnicos** com especialidade e registro profissional
-- Registro de **equipamentos** atendidos com marca, modelo e defeito relatado
-- Controle de **materiais** utilizados com preço unitário
-- Criação e exibição de **ordens de serviço** com status, descrição e cálculo automático do valor total
+O projeto foi desenvolvido com foco na aplicação dos principais conceitos da Programação Orientada a Objetos (POO), proporcionando uma estrutura organizada, reutilizável e de fácil manutenção.
 
 ---
 
-## Conceitos de POO aplicados
+## 🎯 Objetivo
 
-| Conceito | Aplicação no projeto |
-|---|---|
-| **Classes e Objetos** | `Cliente`, `Tecnico`, `Equipamento`, `Material`, `OrdemDeServico` |
-| **Encapsulamento** | Atributos `private`/`protected` com métodos getters |
-| **Herança** | `Cliente` e `Tecnico` herdam da classe abstrata `Pessoa` |
-| **Abstração** | Classe abstrata `Pessoa` com método abstrato `exibirDados()` |
-| **Polimorfismo** | `exibirDados()` implementado de forma diferente em cada subclasse |
-| **Interface** | `ICalculavel` implementada por `OrdemDeServico` para calcular o total |
-| **Coleções** | `List<Equipamento>` e `List<Material>` para múltiplos itens por OS |
+Automatizar o controle de atendimentos realizados por empresas de climatização, permitindo o cadastro e gerenciamento das informações relacionadas aos serviços prestados.
 
 ---
 
-## Estrutura do projeto
+## ⚙️ Funcionalidades
 
-```
+### 👤 Gestão de Clientes
+- Cadastro de clientes
+- Consulta de informações dos clientes
+- Associação de clientes às ordens de serviço
+
+### 🔧 Gestão de Técnicos
+- Cadastro de técnicos
+- Registro de especialidades
+- Associação de técnicos aos atendimentos
+
+### ❄️ Gestão de Equipamentos
+- Cadastro de equipamentos de ar-condicionado
+- Registro de modelo e fabricante
+- Vinculação aos clientes
+
+### 📦 Gestão de Materiais
+- Cadastro de materiais utilizados
+- Controle de custos
+- Associação aos serviços realizados
+
+### 📋 Gestão de Ordens de Serviço
+- Abertura de ordens de serviço
+- Registro de descrição do problema
+- Controle de status do atendimento
+- Cálculo de custos do serviço
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```text
 src/
-└── main/
-    └── java/
-        └── com/
-            └── ordemservico/
-                ├── Pessoa.java          # Classe abstrata base
-                ├── Cliente.java         # Herda de Pessoa
-                ├── Tecnico.java         # Herda de Pessoa
-                ├── Equipamento.java     # Equipamento atendido
-                ├── Material.java        # Material utilizado no serviço
-                ├── OrdemDeServico.java  # Ordem de serviço completa
-                ├── ICalculavel.java     # Interface de cálculo
-                └── Main.java            # Classe principal (demonstração)
+│
+├── Pessoa.java
+├── Cliente.java
+├── Tecnico.java
+├── Equipamento.java
+├── Material.java
+├── OrdemDeServico.java
+├── Calculavel.java
+└── Main.java
 ```
 
 ---
 
-## Tecnologias utilizadas
+## 🧠 Conceitos de POO Aplicados
 
-- **Java 17**
-- **Maven** (gerenciamento de dependências)
-- **IntelliJ IDEA** (ambiente de desenvolvimento)
+### Encapsulamento
+Os atributos das classes são protegidos através de modificadores de acesso e manipulados por métodos getters e setters.
+
+### Herança
+As classes Cliente e Tecnico herdam características da classe Pessoa.
+
+### Polimorfismo
+Permite que objetos sejam tratados através de referências genéricas, aumentando a flexibilidade do sistema.
+
+### Abstração
+As classes representam entidades reais do contexto de manutenção de ar-condicionado.
+
+### Interfaces
+Utilização da interface `Calculavel` para padronização de cálculos relacionados aos serviços.
+
+### Coleções
+Uso de estruturas como `List` para armazenamento e gerenciamento de dados.
 
 ---
 
-## Como executar
+## 🖥️ Tecnologias Utilizadas
 
-1. Clone ou extraia o projeto
-2. Abra na IDE de sua preferência (IntelliJ IDEA recomendado)
-3. Certifique-se de que a pasta `src/main/java` está marcada como **Sources Root**
-4. Execute a classe `Main.java`
+- Java
+- Programação Orientada a Objetos (POO)
+- Collections Framework
+- GitHub
+- VS Code
 
 ---
 
 ## Autores
-Gabriel Bortoloti 
-João Victor da Silva
-Lucas Furco Righetto
+Gabriel Bortoloti - GABBORTOLOTI31
+João Victor da Silva - OJotaa
+Lucas Furco Righetto - lfurco
 
 Desenvolvido por alunos do curso de Ciência da Computação — UNI-Facef / Franca-SP
 Disciplina: Programação Orientada a Objetos  
 Ano: 2026
+
+## 📄 Licença
+
+Este projeto é destinado exclusivamente para fins educacionais.
