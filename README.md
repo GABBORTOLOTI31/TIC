@@ -44,23 +44,6 @@ Automatizar o controle de atendimentos realizados por empresas de climatização
 
 ---
 
-## 🏗️ Estrutura do Projeto
-
-```text
-src/
-│
-├── Pessoa.java
-├── Cliente.java
-├── Tecnico.java
-├── Equipamento.java
-├── Material.java
-├── OrdemDeServico.java
-├── Calculavel.java
-└── Main.java
-```
-
----
-
 ## 🧠 Conceitos de POO Aplicados
 
 ### Encapsulamento
@@ -87,10 +70,7 @@ Uso de estruturas como `List` para armazenamento e gerenciamento de dados.
 
 - Java
 - Programação Orientada a Objetos (POO)
-- Collections Framework
-- GitHub
-- VS Code
-
+  
 ---
 
 ## Autores
