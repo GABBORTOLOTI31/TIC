@@ -74,8 +74,8 @@ Uso de estruturas como `List` para armazenamento e gerenciamento de dados.
 ---
 
 ## Autores
-Gabriel Bortoloti - GABBORTOLOTI31
-João Victor da Silva - OJotaa
+Gabriel Bortoloti - GABBORTOLOTI31 ///
+João Victor da Silva - OJotaa /// 
 Lucas Furco Righetto - lfurco
 
 Desenvolvido por alunos do curso de Ciência da Computação — UNI-Facef / Franca-SP
